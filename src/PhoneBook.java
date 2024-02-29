@@ -11,14 +11,14 @@ public class PhoneBook {
         Map<String, ArrayList<String>> phoneBook = new HashMap<>();
 
         // Read the input phone book
-        System.out.print("Enter the number of contacts: ");
+        System.out.print("Введите количество контактов: ");
         int n = scanner.nextInt();
         scanner.nextLine();
 
         for (int i = 0; i < n; i++) {
-            System.out.print("Enter contact name: ");
+            System.out.print("Введите имя: ");
             String name = scanner.nextLine();
-            System.out.print("Enter contact number: ");
+            System.out.print("Введите номер телефона: ");
             String number = scanner.nextLine();
 
             if (phoneBook.containsKey(name)) {
